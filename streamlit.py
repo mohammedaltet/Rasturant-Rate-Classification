@@ -63,4 +63,4 @@ if st.button('Will the restaurant succeed or not?'):
         price = 'Yes'
     elif price == 0:
         price = 'No'
-    st.success(f'The predicted price of the restaurant succeed is {price[0]:.2f}')
+    st.success(f'The predicted price of the restaurant succeed is {price}')
