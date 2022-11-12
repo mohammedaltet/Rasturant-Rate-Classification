@@ -1,0 +1,5 @@
+pickle
+streamlit
+pandas
+sklearn.neighbors
+KNeighborsClassifier
