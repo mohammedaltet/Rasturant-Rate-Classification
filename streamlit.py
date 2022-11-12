@@ -57,7 +57,7 @@ approx_cost = st.number_input('What the approximate cost for meal for two people
 Area = st.selectbox('In which the restaurant is located ? :', list(Area_dic.keys()))
 rest_type = st.selectbox('Restaurant Type:', list(rest_type_dic.keys()))
 
-if st.button('Will the restaurant succeed or not?'):
+if st.button('Will the restaurant success or not?'):
     predic = predict(online_order, book_table, rest_type, multiple_types, total_cuisines, Area, approx_cost)
     if predic == 1:
         predic = 'Yes'
