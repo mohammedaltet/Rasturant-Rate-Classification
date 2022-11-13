@@ -23,3 +23,8 @@ we settled in KNNClassifierModel from it we get :
 - F1 Score value is  : 0.95
 
 with Test Score : 0.9477939708524655
+
+
+link for the steps of the project : https://www.youtube.com/watch?v=aueZ6lQaStU
+
+![alt text](https://techstory.in/wp-content/uploads/2022/02/Zomato.jpg)
