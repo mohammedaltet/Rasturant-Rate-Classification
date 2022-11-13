@@ -49,18 +49,18 @@ st.title('Zomato Success Restaurant Predictor')
 st.image("""https://techstory.in/wp-content/uploads/2022/02/Zomato.jpg""")
 st.header('Enter the restaurant details:')
 
-online_order = st.selectbox('Is online ordering available in the restaurant or not ? :', ['Yes','No'])
-book_table = st.selectbox('Is table book option available or not ? :', ['Yes','No'])
-multiple_types = st.number_input('Number Of Types For The Restaurant :', min_value=1, max_value=2, value=1)
+online_order = st.selectbox('Online Order:', ['Yes','No'])
+book_table = st.selectbox('Book Table:', ['Yes','No'])
+multiple_types = st.number_input('Number Of Restaurant Type He Give:', min_value=1, max_value=2, value=1)
 total_cuisines = st.number_input('Number Of Food Styles:', min_value=1, max_value=8, value=1)
-approx_cost = st.number_input('What the approximate cost for meal for two people ? :', min_value=40, max_value=6000)
-Area = st.selectbox('In which the restaurant is located ? :', list(Area_dic.keys()))
+approx_cost = st.number_input('Contains The Approximate CCost For Meal For Two People:', min_value=40, max_value=6000)
+Area = st.selectbox('Area:', list(Area_dic.keys()))
 rest_type = st.selectbox('Restaurant Type:', list(rest_type_dic.keys()))
 
-if st.button('Will the restaurant success or not?'):
-    predic = predict(online_order, book_table, rest_type, multiple_types, total_cuisines, Area, approx_cost)
-    if predic == 1:
-        predic = 'Yes'
-    elif predic == 0:
-        predic = 'No'
-    st.success(f'The predicted of the restaurant success is : {predic}')
+if st.button('Will the restaurant succeed or not?'):
+    price = predict(online_order, book_table, rest_type, multiple_types, total_cuisines, Area, approx_cost)
+    if price == 1:
+        price = 'Yes'
+    elif price == 0:
+        price = 'No'
+    st.success(f'The predicted price of the restaurant succeed is {price[0]:.2f}')
