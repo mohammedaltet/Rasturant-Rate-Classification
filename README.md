@@ -18,8 +18,8 @@ In This Projet we used various models types
 
 we settled in KNNClassifierModel from it we get : 
 
-Precision value is  : 0.95
-Recall value is  : 0.95
-F1 Score value is  : 0.95
+- Precision value is  : 0.95
+- Recall value is  : 0.95
+- F1 Score value is  : 0.95
 
 with Test Score : 0.9477939708524655
