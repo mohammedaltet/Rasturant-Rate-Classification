@@ -58,9 +58,9 @@ Area = st.selectbox('Area:', list(Area_dic.keys()))
 rest_type = st.selectbox('Restaurant Type:', list(rest_type_dic.keys()))
 
 if st.button('Will the restaurant success or not?'):
-    price = predict(online_order, book_table, rest_type, multiple_types, total_cuisines, Area, approx_cost)
-    if price == 1:
-        price = 'Yes'
-    elif price == 0:
-        price = 'No'
-    st.success(f'The predicted success of the restaurant is {price[0]:.2f}')
+    pridc = predict(online_order, book_table, rest_type, multiple_types, total_cuisines, Area, approx_cost)
+    if pridc == 1:
+        pridc = 'Yes'
+    elif pridc == 0:
+        pridc = 'No'
+    st.success(f'The predicted success of the restaurant is {pridc}')
